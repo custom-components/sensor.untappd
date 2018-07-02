@@ -1,0 +1,32 @@
+{
+	"untapped": {
+		"component": "sensor",
+		"version": "0.0.1",
+		"mantained": "yes",
+		"author": "Peter Skopa @swetoast",
+		"added_to_ha": "false",
+		"added_in_version": "",
+		"overview_img": "false",
+		"title": "Untapped",
+		"short_description": "Checks your untappd info and keeps you updated from home-assistant",
+		"configuration": {
+			"platform": "untapped",
+			"key": "FSDJLKHDF786287UGHLE",
+			"secret": "FJKSDLHKS8337R6948F",
+			"username": "username"
+		},
+		"configuration_variables": {
+			"required": {
+				"platform": "untapped",
+				"key": "Your Untapped API key.",
+				"secret": "Your Untapped API secret.",
+				"username": "The username of the Untaped user, you want updates for."
+			},
+			"optional": {}
+			},
+		"demo_site_aviable": "false",
+		"demo_site_url": "",
+		"instructions": "You will need to apply for an [API from Untapped](https://untappd.com/api) to use this.",
+		"ext_licenses": ""
+	}
+}
