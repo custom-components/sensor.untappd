@@ -23,7 +23,7 @@ key | description
 **secret (Required)** | Your Untapped API secret.  
 **username (Required)** | The username of the Untaped user, you want updates for.  
   
-  
+You will need to apply for an [API from Untapped](https://untappd.com/api) to use this.  
   
 ***
 Due to how `custom_componentes` are importerd, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
