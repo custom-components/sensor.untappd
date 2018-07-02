@@ -24,7 +24,7 @@
 			},
 			"optional": {}
 			},
-		"demo_site_aviable": "false",
+		"demo_site_available": "false",
 		"demo_site_url": "",
 		"instructions": "You will need to apply for an [API from Untapped](https://untappd.com/api) to use this.",
 		"ext_licenses": ""
