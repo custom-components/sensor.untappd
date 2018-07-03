@@ -1,6 +1,6 @@
 # Untapped
   
-![Version](https://img.shields.io/badge/version-0.0.1-green.svg?style=for-the-badge) ![mantained](https://img.shields.io/maintenance/yes/2018.svg?style=for-the-badge)   
+[![Version](https://img.shields.io/badge/version-0.0.1-green.svg?style=for-the-badge)](#) [![mantained](https://img.shields.io/maintenance/yes/2018.svg?style=for-the-badge)](#)   
 Checks your untappd info and keeps you updated from home-assistant
   
 To get started put `/custom_components/sensor/untapped.py` here:  
