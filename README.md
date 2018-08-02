@@ -3,13 +3,13 @@
 [![Version](https://img.shields.io/badge/version-0.0.1-green.svg?style=for-the-badge)](#) [![mantained](https://img.shields.io/maintenance/yes/2018.svg?style=for-the-badge)](#) [![maintainer](https://img.shields.io/badge/maintainer-Peter%20Skopa%20%40swetoast-blue.svg?style=for-the-badge)](#)   
 Checks your untappd info and keeps you updated from home-assistant
   
-To get started put `/custom_components/sensor/untapped.py` here:  
-`<config directory>/custom_components/sensor/untapped.py`  
+To get started put `/custom_components/sensor/untappd.py` here:  
+`<config directory>/custom_components/sensor/untappd.py`  
   
 **Example configuration.yaml:**
 ```yaml
 sensor:
-  platform: untapped
+  platform: untappd
   key: FSDJLKHDF786287UGHLE
   secret: FJKSDLHKS8337R6948F
   username: username
@@ -18,12 +18,12 @@ sensor:
   
 key | description  
 :--- | :---  
-**platform (Required)** | untapped  
-**key (Required)** | Your Untapped API key.  
-**secret (Required)** | Your Untapped API secret.  
-**username (Required)** | The username of the Untaped user, you want updates for.  
+**platform (Required)** | untappd  
+**id (Required)** | Your Untappd API id.  
+**secret (Required)** | Your Untappd API secret.  
+**username (Required)** | The username of the Untappd user, you want updates for.  
   
-You will need to apply for an [API from Untapped](https://untappd.com/api) to use this.  
+You will need to apply for an [API from Untappd](https://untappd.com/api) to use this.  
   
 ***
 Due to how `custom_componentes` are loaded, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
