@@ -24,7 +24,6 @@ ATTR_BEER = 'beer'
 ATTR_SCORE = 'score'
 ATTR_TOTAL_BEERS = 'total beers'
 ATTR_TOTAL_CHECKINS = 'total checkins'
-ATTR_BEER_LIST = 'beer_list'
 
 SCAN_INTERVAL = timedelta(seconds=120)
 
@@ -140,9 +139,7 @@ class UntappdWishlistSensor(Entity):
     @property
     def icon(self):
         return ICON
-        
+
     @property
     def device_state_attributes(self):
-        return {
-            ATTR_BEER_LIST: self.hass.data[WISHLIST_DATA]
-        }
+        return self.hass.data[WISHLIST_DATA]
