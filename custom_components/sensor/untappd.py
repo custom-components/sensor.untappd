@@ -64,7 +64,13 @@ class UntappdCheckinSensor(Entity):
             return False
         else:
             checkin_date = parser.parse(result['created_at']).replace(tzinfo=None)
-            relative_checkin_date = str((current_date - checkin_date).days) + " days ago."
+            if (current_date - checkin_date).days > 0:
+                relative_checkin_date = str((current_date - checkin_date).days) + " days ago."
+            elif (current_date - checkin_date).days == 0:
+                relative_checkin_date = 'Yesterday'
+            else:
+                relative_checkin_date = 'Today'
+
             self._state = relative_checkin_date
             self._beer = result['beer']['beer_name']
             self._score = str(result['rating_score'])
