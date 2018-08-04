@@ -27,8 +27,8 @@ ATTR_TOTAL_CHECKINS = 'total checkins'
 
 SCAN_INTERVAL = timedelta(seconds=120)
 
-ICON = 'mdi:beer'
-__version__ = '0.0.1'
+ICON = 'mdi:untappd'
+__version__ = '0.0.2'
 
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
     vol.Required(CONF_USERNAME): cv.string,
