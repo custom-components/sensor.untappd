@@ -53,6 +53,7 @@ class UntappdCheckinSensor(Entity):
         self._total_beers = None
         self._total_checkins = None
         self._state = None
+        self._picture = None
         self.update()
 
 
@@ -74,6 +75,7 @@ class UntappdCheckinSensor(Entity):
             self._state = relative_checkin_date
             self._beer = result['beer']['beer_name']
             self._score = str(result['rating_score'])
+            self._picture = result['beer']['beer_label']
         
         result = self._untappd.get_info(self._apiid, 
             self._apisecret, self._username)
@@ -86,6 +88,10 @@ class UntappdCheckinSensor(Entity):
     @property
     def name(self):
         return 'Untappd Last Check-in'
+
+    @property
+    def entity_picture(self):
+        return self._picture
 
     @property
     def state(self):
