@@ -7,6 +7,8 @@ Checks your untappd info and keeps you updated from home-assistant and your wish
 
 <div style="text-align: center">
 Like this component for home-assistant?
+  
+  
   <a href="https://www.paypal.me/swetoast">
     <img src="http://www.libertymachinenews.com/uploads/5/8/4/3/58432585/7594747_orig.png" width="300" />
   </a>
