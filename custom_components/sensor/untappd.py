@@ -24,6 +24,7 @@ ATTR_ABV = 'abv'
 ATTR_BEER = 'beer'
 ATTR_SCORE = 'score'
 ATTR_TOTAL_BEERS = 'total beers'
+ATTR_TOTAL_CREATED_BEERS = 'total created beers'
 ATTR_TOTAL_CHECKINS = 'total checkins'
 ATTR_TOTAL_PHOTOS = 'total photos'
 ATTR_TOTAL_BADGES = 'total badges'
@@ -31,7 +32,7 @@ ATTR_TOTAL_BADGES = 'total badges'
 SCAN_INTERVAL = timedelta(seconds=120)
 
 ICON = 'mdi:untappd'
-__version__ = '0.0.2'
+__version__ = '0.0.3'
 
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
     vol.Required(CONF_USERNAME): cv.string,
@@ -55,6 +56,7 @@ class UntappdCheckinSensor(Entity):
         self._apisecret = api_secret
         self._total_badges = None
         self._total_beers = None
+        self._total_created_beers = None
         self._total_checkins = None
         self._total_photos = None
         self._abv = None
@@ -87,10 +89,11 @@ class UntappdCheckinSensor(Entity):
         if not result :
             return False
         else:
+            self._total_badges = result['stats']['total_badges']
             self._total_beers = result['stats']['total_beers']
             self._total_checkins = result['stats']['total_checkins']
+            self._total_created_beers = result['stats']['total_created_beers'] 
             self._total_photos = result['stats']['total_photos']
-            self._total_photos = result['stats']['total_badges']
     
     @property
     def name(self):
@@ -117,6 +120,7 @@ class UntappdCheckinSensor(Entity):
             ATTR_TOTAL_BADGES: self._total_badges,
             ATTR_TOTAL_BEERS: self._total_beers,
             ATTR_TOTAL_CHECKINS: self._total_checkins,
+            ATTR_TOTAL_CREATED_BEERS: self._total_created_beers
             ATTR_TOTAL_PHOTOS: self._total_photos,
         }
 
