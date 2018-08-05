@@ -20,12 +20,13 @@ CONF_SECRET = 'secret'
 
 WISHLIST_DATA = 'untappd_wishlist'
 
+ATTR_ABV = 'abv'
 ATTR_BEER = 'beer'
 ATTR_SCORE = 'score'
 ATTR_TOTAL_BEERS = 'total beers'
 ATTR_TOTAL_CHECKINS = 'total checkins'
 ATTR_TOTAL_PHOTOS = 'total photos'
-ATTR_ABV = 'abv'
+ATTR_TOTAL_BADGES = 'total badges'
 
 SCAN_INTERVAL = timedelta(seconds=120)
 
@@ -52,6 +53,7 @@ class UntappdCheckinSensor(Entity):
         self._username = username
         self._apiid = api_id
         self._apisecret = api_secret
+        self._total_badges = None
         self._total_beers = None
         self._total_checkins = None
         self._total_photos = None
@@ -88,6 +90,7 @@ class UntappdCheckinSensor(Entity):
             self._total_beers = result['stats']['total_beers']
             self._total_checkins = result['stats']['total_checkins']
             self._total_photos = result['stats']['total_photos']
+            self._total_photos = result['stats']['total_badges']
     
     @property
     def name(self):
@@ -108,9 +111,10 @@ class UntappdCheckinSensor(Entity):
     @property
     def device_state_attributes(self):
         return {
+            ATTR_ABV: self._abv,
             ATTR_BEER: self._beer,
             ATTR_SCORE: self._score,
-            ATTR_ABV: self._abv,
+            ATTR_TOTAL_BADGES: self._total_badges,
             ATTR_TOTAL_BEERS: self._total_beers,
             ATTR_TOTAL_CHECKINS: self._total_checkins,
             ATTR_TOTAL_PHOTOS: self._total_photos,
