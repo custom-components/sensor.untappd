@@ -3,8 +3,10 @@
 [![Version](https://img.shields.io/badge/version-0.0.4-green.svg?style=for-the-badge)](#) [![mantained](https://img.shields.io/maintenance/yes/2018.svg?style=for-the-badge)](#) [![maintainer](https://img.shields.io/badge/maintainer-Peter%20Skopa%20%40swetoast-blue.svg?style=for-the-badge)](#)   
 Checks your untappd info and keeps you updated from home-assistant and your wishlist that can be automated to send the list to your phone when your at the bar if you set it up right.
 
-Like this component for home-assistant? then [buy me a beer](https://www.paypal.me/swetoast)
-  
+Like this component for home-assistant?
+
+<a href="https://www.paypal.me/swetoast">![Buy me a beer](https://img.shields.io/badge/Buy%20me%20a%20beer-red.svg?longCache=true&style=for-the-badge)</a>
+
 To get started put `/custom_components/sensor/untappd.py` here:  
 `<config directory>/custom_components/sensor/untappd.py`  
   
