@@ -5,7 +5,9 @@
 
 Checks your untappd info and keeps you updated from home-assistant and your wishlist that can be automated to send the list to your phone when your at the bar if you set it up right.
 
-<p style="text-align:center">Like this component for home-assistant?</p>
+<div style="text-align: center">
+  Like this component for home-assistant?
+</div>
 
 </br>
 
