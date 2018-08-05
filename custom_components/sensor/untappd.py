@@ -23,11 +23,13 @@ WISHLIST_DATA = 'untappd_wishlist'
 ATTR_ABV = 'abv'
 ATTR_BEER = 'beer'
 ATTR_SCORE = 'score'
+ATTR_TOTAL_BADGES = 'total badges'
 ATTR_TOTAL_BEERS = 'total beers'
 ATTR_TOTAL_CREATED_BEERS = 'total created beers'
 ATTR_TOTAL_CHECKINS = 'total checkins'
+ATTR_TOTAL_FOLLOWERS = 'total followers'
+ATTR_TOTAL_FRIENDS = 'total friends'
 ATTR_TOTAL_PHOTOS = 'total photos'
-ATTR_TOTAL_BADGES = 'total badges'
 
 SCAN_INTERVAL = timedelta(seconds=120)
 
@@ -58,6 +60,8 @@ class UntappdCheckinSensor(Entity):
         self._total_beers = None
         self._total_created_beers = None
         self._total_checkins = None
+        self._total_followers = None
+        self._total_friends = None
         self._total_photos = None
         self._abv = None
         self._state = None
@@ -92,7 +96,9 @@ class UntappdCheckinSensor(Entity):
             self._total_badges = result['stats']['total_badges']
             self._total_beers = result['stats']['total_beers']
             self._total_checkins = result['stats']['total_checkins']
-            self._total_created_beers = result['stats']['total_created_beers'] 
+            self._total_created_beers = result['stats']['total_created_beers']
+            self._total_friends = result['stats']['total_friends']
+            self._total_followers = result['stats']['total_followers']
             self._total_photos = result['stats']['total_photos']
     
     @property
@@ -120,7 +126,9 @@ class UntappdCheckinSensor(Entity):
             ATTR_TOTAL_BADGES: self._total_badges,
             ATTR_TOTAL_BEERS: self._total_beers,
             ATTR_TOTAL_CHECKINS: self._total_checkins,
-            ATTR_TOTAL_CREATED_BEERS: self._total_created_beers
+            ATTR_TOTAL_CREATED_BEERS: self._total_created_beers,
+            ATTR_TOTAL_FRIENDS = self._total_friends,
+            ATTR_TOTAL_FOLLOWERS = self._total_followers,
             ATTR_TOTAL_PHOTOS: self._total_photos,
         }
 
