@@ -58,7 +58,6 @@ class UntappdCheckinSensor(Entity):
         self._picture = None
         self.update()
 
-
     def update(self):
         current_date = parser.parse(str(datetime.now())).replace(tzinfo=None)
         result = self._untappd.get_last_activity(self._apiid, 
@@ -125,7 +124,6 @@ class UntappdWishlistSensor(Entity):
         self._state = None
         self.hass.data[WISHLIST_DATA] = {}
         self.update()
-
 
     def update(self):
         result = self._untappd.get_wishlist(self._apiid, 
