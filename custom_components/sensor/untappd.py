@@ -24,7 +24,7 @@ ATTR_BEER = 'beer'
 ATTR_SCORE = 'score'
 ATTR_TOTAL_BEERS = 'total beers'
 ATTR_TOTAL_CHECKINS = 'total checkins'
-ATTR_ABV = 'avb'
+ATTR_ABV = 'abv'
 
 SCAN_INTERVAL = timedelta(seconds=120)
 
