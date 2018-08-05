@@ -5,7 +5,7 @@ Checks your untappd info and keeps you updated from home-assistant and your wish
 
 Like this component for home-assistant?
 
-<a href="https://www.paypal.me/swetoast"> <img src="http://www.libertymachinenews.com/uploads/5/8/4/3/58432585/7594747_orig.png" alt="Click me" height="191" width="341">)</a>
+<a href="https://www.paypal.me/swetoast"> <img src="http://www.libertymachinenews.com/uploads/5/8/4/3/58432585/7594747_orig.png" alt="Click me" height="191" width="341"></a>
 
 To get started put `/custom_components/sensor/untappd.py` here:  
 `<config directory>/custom_components/sensor/untappd.py`  
