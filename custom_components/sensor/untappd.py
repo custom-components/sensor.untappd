@@ -12,7 +12,7 @@ from homeassistant.helpers.entity import Entity
 import homeassistant.helpers.config_validation as cv
 from homeassistant.components.switch import (PLATFORM_SCHEMA)
 
-REQUIREMENTS = ['pyuntappd==0.0.4']
+REQUIREMENTS = ['pyuntappd==0.0.5']
 
 CONF_USERNAME = 'username'
 CONF_ID = 'id'
