@@ -34,7 +34,7 @@ ATTR_TOTAL_PHOTOS = 'total photos'
 SCAN_INTERVAL = timedelta(seconds=120)
 
 ICON = 'mdi:untappd'
-__version__ = '0.0.3'
+__version__ = '0.0.4'
 
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
     vol.Required(CONF_USERNAME): cv.string,
