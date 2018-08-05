@@ -24,6 +24,7 @@ ATTR_BEER = 'beer'
 ATTR_SCORE = 'score'
 ATTR_TOTAL_BEERS = 'total beers'
 ATTR_TOTAL_CHECKINS = 'total checkins'
+ATTR_ABV = 'avb'
 
 SCAN_INTERVAL = timedelta(seconds=120)
 
@@ -52,6 +53,7 @@ class UntappdCheckinSensor(Entity):
         self._apisecret = api_secret
         self._total_beers = None
         self._total_checkins = None
+        self._abv = None
         self._state = None
         self._picture = None
         self.update()
@@ -76,7 +78,7 @@ class UntappdCheckinSensor(Entity):
             self._beer = result['beer']['beer_name']
             self._score = str(result['rating_score'])
             self._picture = result['beer']['beer_label']
-        
+            self.beer_abv = str(result['beer']['beer_abv']) + '%'
         result = self._untappd.get_info(self._apiid, 
             self._apisecret, self._username)
         if not result :
@@ -106,6 +108,7 @@ class UntappdCheckinSensor(Entity):
         return {
             ATTR_BEER: self._beer,
             ATTR_SCORE: self._score,
+            ATTR_ABV: self._abv,
             ATTR_TOTAL_BEERS: self._total_beers,
             ATTR_TOTAL_CHECKINS: self._total_checkins,
         }
