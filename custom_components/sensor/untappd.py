@@ -18,6 +18,8 @@ CONF_USERNAME = 'username'
 CONF_ID = 'id'
 CONF_SECRET = 'secret'
 
+COMPONENT_REPO = 'https://github.com/custom-components/sensor.untapped/
+
 WISHLIST_DATA = 'untappd_wishlist'
 
 ATTR_ABV = 'abv'
@@ -34,7 +36,7 @@ ATTR_TOTAL_PHOTOS = 'total photos'
 SCAN_INTERVAL = timedelta(seconds=120)
 
 ICON = 'mdi:untappd'
-__version__ = '0.0.4'
+__version__ = '0.0.5'
 
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
     vol.Required(CONF_USERNAME): cv.string,
@@ -43,6 +45,7 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
 })
 
 def setup_platform(hass, config, add_devices, discovery_info=None):
+    _LOGGER.warning(' %s Data provided by Untappd, report any issues to %s', COMPONENT_REPO)
     username = config.get(CONF_USERNAME)
     api_id = config.get(CONF_ID)
     api_secret = config.get(CONF_SECRET)
