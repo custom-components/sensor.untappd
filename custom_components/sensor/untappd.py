@@ -43,7 +43,7 @@ ATTR_BADGE = 'badge'
 ATTR_LEVEL = 'level'
 ATTR_DESCRIPTION = 'description'
 
-SCAN_INTERVAL = timedelta(seconds=120)
+SCAN_INTERVAL = timedelta(seconds=300)
 
 ICON = 'mdi:untappd'
 
@@ -141,7 +141,7 @@ class UntappdCheckinSensor(Entity):
             ATTR_TOTAL_CHECKINS: self._total_checkins,
             ATTR_TOTAL_CREATED_BEERS: self._total_created_beers,
             ATTR_TOTAL_FRIENDS: self._total_friends,
-            ATTR_TOTAL_FOLLOWINGS: self._total_followers,
+            ATTR_TOTAL_FOLLOWINGS: self._total_followings,
             ATTR_TOTAL_PHOTOS: self._total_photos,
         }
 
