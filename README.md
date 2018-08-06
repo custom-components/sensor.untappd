@@ -1,6 +1,6 @@
 # Untapped
   
-[![Version](https://img.shields.io/badge/version-0.0.5-green.svg?style=for-the-badge)](#) [![mantained](https://img.shields.io/maintenance/yes/2018.svg?style=for-the-badge)](#) [![maintainer](https://img.shields.io/badge/maintainer-Peter%20Skopa%20%40swetoast-blue.svg?style=for-the-badge)](#)
+[![Version](https://img.shields.io/badge/version-0.0.6-green.svg?style=for-the-badge)](#) [![mantained](https://img.shields.io/maintenance/yes/2018.svg?style=for-the-badge)](#) [![maintainer](https://img.shields.io/badge/maintainer-Peter%20Skopa%20%40swetoast-blue.svg?style=for-the-badge)](#)
 
 
 Checks your untappd info and keeps you updated from home-assistant and your wishlist that can be automated to send the list to your phone when your at the bar if you set it up right. Use the [beer card](https://github.com/ciotlosm/custom-lovelace/tree/master/beer-card) to display the wishlist its made by [Ciotlosm](https://github.com/ciotlosm)
