@@ -24,10 +24,10 @@ To get started put `/custom_components/sensor/untappd.py` here:
 **Example configuration.yaml:**
 ```yaml
 sensor:
-  platform: untappd
-  key: FSDJLKHDF786287UGHLE
-  secret: FJKSDLHKS8337R6948F
-  username: username
+  - platform: untappd
+    username: average_joe
+    id: FSDJLKHDF786287UGHLE
+    secret: FJKSDLHKS8337R6948F
 ```
 **Configuration variables:**  
   
