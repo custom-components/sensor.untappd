@@ -16,7 +16,7 @@ from homeassistant.components.switch import (PLATFORM_SCHEMA)
 
 REQUIREMENTS = ['pyuntappd==0.0.5']
 
-__version__ = '0.0.7'
+__version__ = '0.0.8'
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -31,13 +31,13 @@ WISHLIST_DATA = 'untappd_wishlist'
 ATTR_ABV = 'abv'
 ATTR_BEER = 'beer'
 ATTR_SCORE = 'score'
-ATTR_TOTAL_BADGES = 'total badges'
-ATTR_TOTAL_BEERS = 'total beers'
-ATTR_TOTAL_CREATED_BEERS = 'total created beers'
-ATTR_TOTAL_CHECKINS = 'total checkins'
-ATTR_TOTAL_FOLLOWINGS = 'total followings'
-ATTR_TOTAL_FRIENDS = 'total friends'
-ATTR_TOTAL_PHOTOS = 'total photos'
+ATTR_TOTAL_BADGES = 'total_badges'
+ATTR_TOTAL_BEERS = 'total_beers'
+ATTR_TOTAL_CREATED_BEERS = 'total_created_beers'
+ATTR_TOTAL_CHECKINS = 'checkins'
+ATTR_TOTAL_FOLLOWINGS = 'followings'
+ATTR_TOTAL_FRIENDS = 'friends'
+ATTR_TOTAL_PHOTOS = 'photos'
 
 ATTR_BADGE = 'badge'
 ATTR_LEVEL = 'level'
