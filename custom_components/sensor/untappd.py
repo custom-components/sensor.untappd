@@ -16,7 +16,7 @@ from homeassistant.components.switch import (PLATFORM_SCHEMA)
 
 REQUIREMENTS = ['pyuntappd==0.0.5']
 
-__version__ = '0.0.6'
+__version__ = '0.0.7'
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -100,7 +100,7 @@ class UntappdCheckinSensor(Entity):
             self._beer = result['beer']['beer_name']
             self._score = str(result['rating_score'])
             self._picture = result['beer']['beer_label']
-            self._beer_abv = str(result['beer']['beer_abv']) + '%'
+            self._abv = str(result['beer']['beer_abv']) + '%'
         result = self._untappd.get_info(self._apiid, 
             self._apisecret, self._username)
         if not result :
