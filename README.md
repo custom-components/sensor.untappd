@@ -1,4 +1,4 @@
-# Untapped
+# Untappd
   
 [![Version](https://img.shields.io/badge/version-0.0.8-green.svg?style=for-the-badge)](#) [![mantained](https://img.shields.io/maintenance/yes/2018.svg?style=for-the-badge)](#)
 
