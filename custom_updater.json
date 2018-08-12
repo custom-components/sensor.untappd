@@ -1,0 +1,10 @@
+{
+    "sensor.untappd": {
+      "updated_at": "",
+      "version": "0.0.8",
+      "local_location": "/custom_components/sensor/untappd.py",
+      "remote_location": "https://raw.githubusercontent.com/custom-components/sensor.untapped/master/custom_components/sensor/untappd.py",
+      "visit_repo": "https://github.com/custom-components/sensor.untapped",
+      "changelog": "https://github.com/custom-components/sensor.untapped/releases/latest"
+    }
+}
