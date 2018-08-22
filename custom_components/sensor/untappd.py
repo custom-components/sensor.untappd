@@ -16,7 +16,7 @@ from homeassistant.components.switch import (PLATFORM_SCHEMA)
 
 REQUIREMENTS = ['pyuntappd==0.0.5']
 
-__version__ = '0.0.8'
+__version__ = '0.0.9'
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -167,11 +167,19 @@ class UntappdWishlistSensor(Entity):
             self._state = result['count']
             for beer in result['items']:
                 name = beer['beer']['beer_name']
-                beer_label = beer['beer']['beer_label']
-                brewery_name = beer['brewery']['brewery_name']
+
                 self.hass.data[WISHLIST_DATA][name] = {
-                    "brewery_name": brewery_name,
-                    "beer_label": beer_label,
+                    "beer_name": name,
+                    "beer_label": beer['beer']['beer_label'],
+                    "beer_description": beer['beer']['beer_description'],
+                    "beer_abv": beer['beer']['beer_abv'],
+                    "beer_style": beer['beer']['beer_style'],
+                    "beer_ibu": beer['beer']['beer_ibu'],
+                    "rating_score": beer['beer']['rating_score'],
+                    "rating_count": beer['beer']['rating_count'],
+                    "brewery_label": beer['brewery']['brewery_label'],
+                    "brewery_name": beer['brewery']['brewery_name'],
+                    "country_name": beer['brewery']['country_name'],
                 }
 
     @property
