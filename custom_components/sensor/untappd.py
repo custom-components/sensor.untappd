@@ -16,7 +16,7 @@ from homeassistant.components.switch import (PLATFORM_SCHEMA)
 
 REQUIREMENTS = ['pyuntappd==0.0.5']
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -83,7 +83,7 @@ class UntappdCheckinSensor(Entity):
 
     def update(self):
         current_date = parser.parse(str(datetime.now())).replace(tzinfo=None)
-        result = self._untappd.get_last_activity(self._apiid, 
+        result = self._untappd.get_last_activity(self._apiid,
             self._apisecret, self._username)
         if not result :
             return False
@@ -101,7 +101,7 @@ class UntappdCheckinSensor(Entity):
             self._score = str(result['rating_score'])
             self._picture = result['beer']['beer_label']
             self._abv = str(result['beer']['beer_abv']) + '%'
-        result = self._untappd.get_info(self._apiid, 
+        result = self._untappd.get_info(self._apiid,
             self._apisecret, self._username)
         if not result :
             return False
@@ -113,10 +113,10 @@ class UntappdCheckinSensor(Entity):
             self._total_friends = result['stats']['total_friends']
             self._total_followings = result['stats']['total_followings']
             self._total_photos = result['stats']['total_photos']
-    
+
     @property
     def name(self):
-        return 'Untappd Last Check-in'
+        return 'Untappd Last Check-in (' + self._username + ')'
 
     @property
     def entity_picture(self):
@@ -159,7 +159,7 @@ class UntappdWishlistSensor(Entity):
         self.update()
 
     def update(self):
-        result = self._untappd.get_wishlist(self._apiid, 
+        result = self._untappd.get_wishlist(self._apiid,
             self._apisecret, self._username)
         if not result :
             return False
@@ -185,7 +185,7 @@ class UntappdWishlistSensor(Entity):
 
     @property
     def name(self):
-        return 'Untappd On The Wishlist'
+        return 'Untappd Wishlist (' + self._username + ')'
 
     @property
     def state(self):
@@ -212,7 +212,7 @@ class UntappdLastBadgeSensor(Entity):
 
 
     def update(self):
-        result = self._untappd.get_badges(self._apiid, 
+        result = self._untappd.get_badges(self._apiid,
             self._apisecret, self._username)
         if not result or len(result) < 1 :
             return False
@@ -234,7 +234,7 @@ class UntappdLastBadgeSensor(Entity):
 
     @property
     def name(self):
-        return 'Untappd Last Badge'
+        return 'Untappd Last Badge (' + self._username + ')'
 
     @property
     def entity_picture(self):
