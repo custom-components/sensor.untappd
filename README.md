@@ -1,6 +1,6 @@
 # Untappd
 
-[![Version](https://img.shields.io/badge/version-0.1.1-green.svg?style=for-the-badge)](#) [![mantained](https://img.shields.io/maintenance/yes/2018.svg?style=for-the-badge)](#)
+[![Version](https://img.shields.io/badge/version-0.1.1-green.svg?style=for-the-badge)](#) [![mantained](https://img.shields.io/maintenance/yes/2019.svg?style=for-the-badge)](#)
 
 [![maintainer](https://img.shields.io/badge/maintainer-Peter%20Skopa%20%40swetoast-blue.svg?style=for-the-badge)](#) [![maintainer](https://img.shields.io/badge/maintainer-Ian%20Richardson%20%40iantrich-blue.svg?style=for-the-badge)](#)
 
@@ -9,8 +9,7 @@ Get Untappd last badge, check-in, wishlist and more in Home Assistant. You can a
 
 ## Like this component for home-assistant?
 
-@swetoast
-<div style="text-align: center">
+@swetoast <div style="text-align: center">
   <a href="https://www.paypal.me/swetoast">
     <img src="http://www.libertymachinenews.com/uploads/5/8/4/3/58432585/7594747_orig.png" width="300" />
   </a>
