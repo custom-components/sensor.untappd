@@ -24,7 +24,7 @@ CONF_USERNAME = 'username'
 CONF_ID = 'id'
 CONF_SECRET = 'secret'
 
-COMPONENT_REPO = 'https://github.com/custom-components/sensor.untapped/'
+COMPONENT_REPO = 'https://github.com/custom-components/sensor.untappd/'
 
 WISHLIST_DATA = 'untappd_wishlist'
 
