@@ -16,7 +16,7 @@ from homeassistant.components.switch import (PLATFORM_SCHEMA)
 
 REQUIREMENTS = ['pyuntappd==0.0.5']
 
-__version__ = '0.1.1'
+__version__ = '0.1.2'
 
 _LOGGER = logging.getLogger(__name__)
 
