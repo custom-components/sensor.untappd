@@ -18,8 +18,8 @@ Get Untappd last badge, check-in, wishlist and more in Home Assistant. You can a
 @iantrich
 [![coffee](https://www.buymeacoffee.com/assets/img/custom_images/black_img.png)](https://www.buymeacoffee.com/zJtVxUAgH)
 
-To get started put `/custom_components/sensor/untappd.py` here:
-`<config directory>/custom_components/sensor/untappd.py`
+To get started put `/custom_components/untappd/sensor.py` here:
+`<config directory>/custom_components/untappd/sensor.py`
 
 **Example configuration.yaml:**
 ```yaml
