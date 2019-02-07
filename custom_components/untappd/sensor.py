@@ -16,7 +16,7 @@ from homeassistant.components.switch import (PLATFORM_SCHEMA)
 
 REQUIREMENTS = ['pyuntappd==0.0.5']
 
-__version__ = '0.1.2'
+__version__ = '0.1.3'
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -30,6 +30,7 @@ WISHLIST_DATA = 'untappd_wishlist'
 
 ATTR_ABV = 'abv'
 ATTR_BEER = 'beer'
+ATTR_BREWERY = 'brewery'
 ATTR_SCORE = 'score'
 ATTR_TOTAL_BADGES = 'total_badges'
 ATTR_TOTAL_BEERS = 'total_beers'
@@ -98,6 +99,7 @@ class UntappdCheckinSensor(Entity):
 
             self._state = relative_checkin_date
             self._beer = result['beer']['beer_name']
+            self._brewery = result['brewery']['brewery_name']
             self._score = str(result['rating_score'])
             self._picture = result['beer']['beer_label']
             self._abv = str(result['beer']['beer_abv']) + '%'
@@ -135,6 +137,7 @@ class UntappdCheckinSensor(Entity):
         return {
             ATTR_ABV: self._abv,
             ATTR_BEER: self._beer,
+            ATTR_BREWERY: self._brewery,
             ATTR_SCORE: self._score,
             ATTR_TOTAL_BADGES: self._total_badges,
             ATTR_TOTAL_BEERS: self._total_beers,
