@@ -1,8 +1,14 @@
 # Untappd
 
-[![Version](https://img.shields.io/badge/version-0.1.3-green.svg?style=for-the-badge)](#) [![mantained](https://img.shields.io/maintenance/yes/2019.svg?style=for-the-badge)](#)
+[![GitHub Release][releases-shield]][releases]
+[![License][license-shield]](LICENSE.md)
 
-[![maintainer](https://img.shields.io/badge/maintainer-Peter%20Skopa%20%40swetoast-blue.svg?style=for-the-badge)](#) [![maintainer](https://img.shields.io/badge/maintainer-Ian%20Richardson%20%40iantrich-blue.svg?style=for-the-badge)](#)
+![Maintenancer][maintenance-shield1]
+![Maintenancer][maintenance-shield2]
+[![GitHub Activity][commits-shield]][commits]
+
+[![Discord][discord-shield]][discord]
+[![Community Forum][forum-shield]][forum]
 
 
 Get Untappd last badge, check-in, wishlist and more in Home Assistant. You can also use the [beer card](https://github.com/ciotlosm/custom-lovelace/tree/master/beer-card) by [ciotlosm](https://github.com/ciotlosm) or the [list-card](https://github.com/custom-cards/list-card) by [iantrich](https://github.com/iantrich) to display your wishlist in Lovelace.
@@ -42,3 +48,15 @@ You will need to apply for an [API from Untappd](https://untappd.com/api) to use
 
 ***
 Due to how `custom_components` are loaded, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
+
+[commits-shield]: https://img.shields.io/github/commit-activity/y/custom-components/sensor.untapped.svg
+[commits]: https://github.com/custom-components/sensor.untapped/commits/master
+[discord]: https://discord.gg/Qa5fW2R
+[discord-shield]: https://img.shields.io/discord/478094546522079232.svg
+[forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
+[forum]: https://community.home-assistant.io/t/untappd-api/54627
+[license-shield]: https://img.shields.io/github/license/custom-components/sensor.untapped.svg
+[maintenance-shield1]: https://img.shields.io/badge/maintainer-Peter%20Skopa%20%40swetoast-blue.svg
+[maintenance-shield2]: https://img.shields.io/badge/maintainer-Ian%20Richardson%20%40iantrich-blue.svg
+[releases-shield]: https://img.shields.io/github/release/custom-components/sensor.untapped.svg
+[releases]: https://github.com/custom-components/sensor.untapped/releases
