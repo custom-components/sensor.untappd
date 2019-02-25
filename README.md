@@ -1,10 +1,10 @@
-# Untappd
+# sensor.untappd
 
 [![GitHub Release][releases-shield]][releases]
 [![License][license-shield]](LICENSE.md)
 
-![Maintenancer][maintenance-shield1]
-![Maintenancer][maintenance-shield2]
+![Project Maintenance][maintenance-shield1]
+![Project Maintenance][maintenance-shield2]
 [![GitHub Activity][commits-shield]][commits]
 
 [![Discord][discord-shield]][discord]
