@@ -1,0 +1,10 @@
+name: sensor.untappd
+description: 🍻 Untappd component for Home Assistant
+type: component
+keywords:
+  - sensor
+  - untappd
+  - beer
+license: MIT
+files:
+  - custom_components/untappd/sensor.py
