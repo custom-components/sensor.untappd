@@ -14,12 +14,8 @@
 Get Untappd last badge, check-in, wishlist and more in Home Assistant. You can also use the [beer card](https://github.com/ciotlosm/custom-lovelace/tree/master/beer-card) by [ciotlosm](https://github.com/ciotlosm) or the [list-card](https://github.com/custom-cards/list-card) by [iantrich](https://github.com/iantrich) to display your wishlist in Lovelace.
 
 ## Like this component for home-assistant?
-
-@swetoast <div style="text-align: center">
-  <a href="https://www.paypal.me/swetoast">
-    <img src="http://www.libertymachinenews.com/uploads/5/8/4/3/58432585/7594747_orig.png" width="300" />
-  </a>
-</div>
+@swetoast
+[![beer](https://gitlab.com/swe_toast/asustor_firewall/raw/master/images/Untitled.png)](https://www.paypal.me/swetoast)
 
 @iantrich
 [![coffee](https://www.buymeacoffee.com/assets/img/custom_images/black_img.png)](https://www.buymeacoffee.com/zJtVxUAgH)
