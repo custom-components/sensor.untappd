@@ -15,7 +15,7 @@ Get Untappd last badge, check-in, wishlist and more in Home Assistant. You can a
 
 ## Like this component for home-assistant?
 
-| Donate | Developer |
+| Donate | Developers |
 | --- | --- |
 | <a href="https://www.paypal.me/swetoast"><img align="center" src="https://gitlab.com/swe_toast/asustor_firewall/raw/master/images/Untitled.png"></a>   | <a href="https://github.com/swetoast">Toast</a></div> |
 | <a href="https://www.buymeacoffee.com/zJtVxUAgH"><img align="center" src="https://www.buymeacoffee.com/assets/img/custom_images/black_img.png"></a> | <a href="https://github.com/iantrich">Ian Richardson</a> |
