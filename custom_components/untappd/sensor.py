@@ -13,12 +13,15 @@ from datetime import datetime
 from homeassistant.helpers.entity import Entity
 import homeassistant.helpers.config_validation as cv
 from homeassistant.components.switch import (PLATFORM_SCHEMA)
+from homeassistant.const import ATTR_ATTRIBUTION
 
 REQUIREMENTS = ['pyuntappd==0.0.5']
 
 __version__ = '0.1.3'
 
 _LOGGER = logging.getLogger(__name__)
+
+ATTRIBUTION = 'Information provided by Untappd'
 
 CONF_USERNAME = 'username'
 CONF_ID = 'id'
@@ -55,7 +58,6 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
 })
 
 def setup_platform(hass, config, add_devices, discovery_info=None):
-    _LOGGER.warning('Data provided by Untappd, report any issues to %s', COMPONENT_REPO)
     username = config.get(CONF_USERNAME)
     api_id = config.get(CONF_ID)
     api_secret = config.get(CONF_SECRET)
@@ -257,4 +259,5 @@ class UntappdLastBadgeSensor(Entity):
             ATTR_BADGE: self._badge,
             ATTR_LEVEL: self._level,
             ATTR_DESCRIPTION: self._description,
+            ATTR_ATTRIBUTION: ATTRIBUTION,
         }
