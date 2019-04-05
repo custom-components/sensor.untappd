@@ -17,7 +17,7 @@ from homeassistant.const import ATTR_ATTRIBUTION
 
 REQUIREMENTS = ['pyuntappd==0.0.5']
 
-__version__ = '0.1.3'
+__version__ = '0.1.4'
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -148,6 +148,7 @@ class UntappdCheckinSensor(Entity):
             ATTR_TOTAL_FRIENDS: self._total_friends,
             ATTR_TOTAL_FOLLOWINGS: self._total_followings,
             ATTR_TOTAL_PHOTOS: self._total_photos,
+            ATTR_ATTRIBUTION: ATTRIBUTION,
         }
 
 class UntappdWishlistSensor(Entity):
