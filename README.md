@@ -2,10 +2,11 @@
 
 [![GitHub Release][releases-shield]][releases]
 [![License][license-shield]](LICENSE.md)
+[![GitHub Activity][commits-shield]][commits]
 
 ![Project Maintenance][maintenance-shield1]
 ![Project Maintenance][maintenance-shield2]
-[![GitHub Activity][commits-shield]][commits]
+
 
 [![Discord][discord-shield]][discord]
 [![Community Forum][forum-shield]][forum]
