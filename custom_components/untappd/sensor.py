@@ -17,7 +17,7 @@ from homeassistant.const import ATTR_ATTRIBUTION
 
 REQUIREMENTS = ['pyuntappd==0.0.5']
 
-__version__ = '0.1.4'
+__version__ = '0.1.5'
 
 _LOGGER = logging.getLogger(__name__)
 
