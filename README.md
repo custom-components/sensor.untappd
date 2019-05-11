@@ -14,13 +14,6 @@
 
 Get Untappd last badge, check-in, wishlist and more in Home Assistant. You can also use the [beer card](https://github.com/ciotlosm/custom-lovelace/tree/master/beer-card) by [ciotlosm](https://github.com/ciotlosm) or the [list-card](https://github.com/custom-cards/list-card) by [iantrich](https://github.com/iantrich) to display your wishlist in Lovelace.
 
-## Like this component for home-assistant?
-
-| Donate | Developers |
-| --- | --- |
-| <a href="https://www.paypal.me/swetoast"><img align="center" src="https://gitlab.com/swe_toast/asustor_firewall/raw/master/images/Untitled.png"></a>   | <a href="https://github.com/swetoast">Toast</a></div> |
-| <a href="https://www.buymeacoffee.com/zJtVxUAgH"><img align="center" src="https://www.buymeacoffee.com/assets/img/custom_images/black_img.png"></a> | <a href="https://github.com/iantrich">Ian Richardson</a> |
-
 To get started put `/custom_components/untappd/` here:
 `<config directory>/custom_components/untappd/`
 
@@ -45,6 +38,13 @@ You will need to apply for an [API from Untappd](https://untappd.com/api) to use
 
 ***
 Due to how `custom_components` are loaded, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
+
+## Like this component for home-assistant?
+
+| Donate | Developers |
+| --- | --- |
+| <a href="https://www.paypal.me/swetoast"><img align="center" src="https://gitlab.com/swe_toast/asustor_firewall/raw/master/images/Untitled.png"></a>   | <a href="https://github.com/swetoast">Toast</a></div> |
+| <a href="https://www.buymeacoffee.com/zJtVxUAgH"><img align="center" src="https://www.buymeacoffee.com/assets/img/custom_images/black_img.png"></a> | <a href="https://github.com/iantrich">Ian Richardson</a> |
 
 [commits-shield]: https://img.shields.io/github/commit-activity/y/custom-components/sensor.untapped.svg?style=for-the-badge
 [commits]: https://github.com/custom-components/sensor.untapped/commits/master
