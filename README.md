@@ -4,9 +4,7 @@
 [![License][license-shield]](LICENSE.md)
 [![GitHub Activity][commits-shield]][commits]
 
-![Project Maintenance][maintenance-shield1]
-![Project Maintenance][maintenance-shield2]
-
+![Project Maintenances][maintenance-shield1]
 
 [![Discord][discord-shield]][discord]
 [![Community Forum][forum-shield]][forum]
@@ -46,7 +44,6 @@ Due to how `custom_components` are loaded, it is normal to see a `ModuleNotFound
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg?style=for-the-badge
 [forum]: https://community.home-assistant.io/t/untappd-api/54627
 [license-shield]: https://img.shields.io/github/license/custom-components/sensor.untapped.svg?style=for-the-badge
-[maintenance-shield1]: https://img.shields.io/badge/maintainer-Peter%20Skopa%20%40swetoast-blue.svg?style=for-the-badge
-[maintenance-shield2]: https://img.shields.io/badge/maintainer-Ian%20Richardson%20%40iantrich-blue.svg?style=for-the-badge
+[maintenance-shield1]: https://img.shields.io/badge/maintainer-Peter%20Skopa%20%40swetoast%20&%20Ian%20Richardson%20%40iantrich-blue.svg?style=for-the-badge
 [releases-shield]: https://img.shields.io/github/release/custom-components/sensor.untapped.svg?style=for-the-badge
 [releases]: https://github.com/custom-components/sensor.untapped/releases
