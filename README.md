@@ -48,3 +48,4 @@ Due to how `custom_components` are loaded, it is normal to see a `ModuleNotFound
 [releases-shield]: https://img.shields.io/github/release/custom-components/sensor.untapped.svg?style=for-the-badge
 [releases]: https://github.com/custom-components/sensor.untapped/releases
 [contributors]: https://github.com/custom-components/sensor.untappd/graphs/contributors
+[contributors-shield]: https://img.shields.io/github/contributors/custom-components/sensor.untappd.svg?style=for-the-badge
