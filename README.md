@@ -5,7 +5,7 @@
 [![GitHub Activity][commits-shield]][commits]
 [![Discord][discord-shield]][discord]
 [![Community Forum][forum-shield]][forum]
-
+[![Contributors][contributors-shield]][contributors]
 ![Project Maintenances][maintenance-shield1]
 
 
@@ -47,3 +47,4 @@ Due to how `custom_components` are loaded, it is normal to see a `ModuleNotFound
 [maintenance-shield1]: https://img.shields.io/badge/maintainer-Peter%20Skopa%20%40swetoast%20&%20Ian%20Richardson%20%40iantrich-blue.svg?style=for-the-badge
 [releases-shield]: https://img.shields.io/github/release/custom-components/sensor.untapped.svg?style=for-the-badge
 [releases]: https://github.com/custom-components/sensor.untapped/releases
+[contributors]: https://github.com/custom-components/sensor.untappd/graphs/contributors
