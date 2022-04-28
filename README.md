@@ -8,6 +8,7 @@
 [![Contributors][contributors-shield]][contributors]
 ![Project Maintenances][maintenance-shield1]
 
+**IMPORTANT: https://insiders.untappd.com/ gotta pay to play for exporting api so dont consider this project alive anymore**
 
 Get Untappd last badge, check-in, wishlist and more in Home Assistant use the [list-card](https://github.com/custom-cards/list-card) by [iantrich](https://github.com/iantrich) to display your wishlist in Lovelace.
 
